@@ -1,0 +1,12 @@
+.trip {
+  box-shadow: 0px 4px 16px 0px rgba(141, 211, 187, 0.15);
+
+  &__choose {
+    border: 1px solid #1C1B1F;
+    border-radius: 4px;
+  }
+
+  &__text {
+    color: #1C1B1F;
+  }
+}

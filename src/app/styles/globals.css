@@ -3,5 +3,13 @@
 @tailwind utilities;
 
 .container {
-  
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 104px;
+  padding-left: 104px;
+}
+
+body {
+  background-color: #FAFBFC;
 }

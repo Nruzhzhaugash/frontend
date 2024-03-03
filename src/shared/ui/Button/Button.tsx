@@ -1,12 +1,11 @@
+import React from 'react';
 import cn from 'classnames';
-import React from 'react'
 
-interface IButton {
-  className?: string;
+interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   label: string;
 }
 
-export default function Button({ className, label, ...rest }: IButton) {
+const Button: React.FC<IButtonProps> = ({ className, label, ...rest }) => {
   return (
     <button 
       className={cn(className, 'border-none outline-none')}
@@ -14,5 +13,8 @@ export default function Button({ className, label, ...rest }: IButton) {
     >
       {label}
     </button>
-  )
+  );
 }
+
+export default Button;
+
